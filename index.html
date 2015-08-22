@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/justin-john/jquery.dynamic.imagemap/master/jquery.dynamic.imagemap.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/justin-john/jquery.dynamic.imagemap/master/jquery.dynamic.imagemap.js"></script>
 
     <script>
     
@@ -38,7 +38,23 @@
 
     <section class="main-content">
 
-      <h1>See Demo</h1>
+      <h1>
+        <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>See Demo</h1>
+
+        <span style="font-size: 14px; margin: 10px 0">Left Side : Original Image with image map</span>
+        <span style="font-size: 14px; margin: 10px 0 10px 200px;">Right Side:  Plugin customised image map</span>
+        <br><br>
+
+        <img src="images/planets.gif" width="145" height="126" alt="Planets" usemap="#planet">
+
+        <map  name="planet">
+          <area shape="rect" coords="0,0,82,126" data-style="background: red"  alt="Sun" href="sun.htm">
+          <area shape="circle" coords="90,58,3" data-class="mercury container" data-style="background: yellow" alt="Mercury" href="mercur.htm">
+          <area shape="circle" coords="124,58,8" data-class="venus"  data-style="background: green" alt="Venus" href="venus.htm">
+        </map>
+
+
+        <span style="margin: 0 150px 0 230px;position: relative;bottom: 50px;"> To </span>
 
         <img id="first-image" src="images/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
 
@@ -54,9 +70,18 @@
 
 
 
-        <map id="second-map" name="map1" id="map1">
+        <map name="map2">
             <area href="contacts.html" alt="Contacts" title="Contacts" data-style="background: green" shape="RECT" coords="6,116,97,184">
             <area href="products.html" alt="Products" title="Products" data-style="background: red" data-content="<p>2</p>" shape="CIRCLE" coords="251,143,47">
+        </map>
+        <img src="images/testmap.gif" alt="map of GH site" border="0" width="300" height="300" usemap="#map2">
+
+        <span style="margin: 0 80px;position: relative;bottom: 150px;"> To </span>
+
+        <map id="second-map" name="map1" id="map1">
+            <area href="contacts.html" alt="Contacts" title="Contacts" data-style="background: green" shape="RECT" coords="6,116,97,184">
+            <area href="products.html" alt="Products" title="Products" data-style="background: red"
+                  data-content="<p style='line-height:90px;text-align:center;'>2</p>" shape="CIRCLE" coords="251,143,47">
         </map>
         <img id="second-image" src="images/testmap.gif" alt="map of GH site" border="0" width="300" height="300" usemap="#map1">
 
