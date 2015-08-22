@@ -8,6 +8,24 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/justin-john/jquery.dynamic.imagemap/master/jquery.dynamic.imagemap.js"></script>
+
+    <script>
+    
+    $(document).ready(function() {
+        /* Attach the area elements to dynamicImageMap */
+        $('#first-image').dynamicImageMap({
+            areas: $('#first-map area')
+        });
+
+        $('#second-image').dynamicImageMap();
+
+    });
+
+    </script>
+
   </head>
   <body>
     <section class="page-header">
@@ -19,21 +37,42 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="jquerydynamicimagemap" class="anchor" href="#jquerydynamicimagemap" aria-hidden="true"><span class="octicon octicon-link"></span></a>jquery.dynamic.imagemap</h1>
+
+      <h1>See Demo</h1>
+
+        <img id="first-image" src="images/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+        <map id="first-map" name="planetmap">
+          <area shape="rect" coords="0,0,82,126" data-style="background: red"  alt="Sun" href="sun.htm">
+          <area shape="circle" coords="90,58,3" data-class="mercury container" data-style="background: yellow" alt="Mercury" href="mercur.htm">
+          <area shape="circle" coords="124,58,8" data-class="venus"  data-style="background: green" alt="Venus" href="venus.htm">
+        </map>
+
+
+
+        <br><br>
+
+
+
+        <map id="second-map" name="map1" id="map1">
+            <area href="contacts.html" alt="Contacts" title="Contacts" data-style="background: green" shape="RECT" coords="6,116,97,184">
+            <area href="products.html" alt="Products" title="Products" data-style="background: red" data-content="<p>2</p>" shape="CIRCLE" coords="251,143,47">
+        </map>
+        <img id="second-image" src="images/testmap.gif" alt="map of GH site" border="0" width="300" height="300" usemap="#map1">
+
+
+      <h2>
+<a id="jquerydynamicimagemap" class="anchor" href="#jquerydynamicimagemap" aria-hidden="true"><span class="octicon octicon-link"></span></a>jquery.dynamic.imagemap</h2>
 
 <p>A jQuery plugin to create dynamic elements to be placed over image map area tag by using the coordinates in
 corresponding area tag. This plugin can be useful when server responds with some coordinates on image and need to
 create some custom element which will placed on top of image with respect to these coordinates. Here coordinates data
 are given from server side to <code>area</code> tag "coords" attribute.</p>
 
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
 
 <div class="highlight highlight-bash"><pre>npm install dynamic-imagemap</pre></div>
-
-<h2>
-<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
 
 <h4>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h4>
