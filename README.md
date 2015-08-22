@@ -4,6 +4,10 @@ corresponding area tag. This plugin can be useful when server responds with some
 create some custom element which will placed on top of image with respect to these coordinates. Here coordinates data
 are given from server side to `area` tag "coords" attribute.
 
+## Demo
+
+See Demo [here](http://justin-john.github.io/jquery.dynamic.imagemap/#demo).
+
 ## Installation
 
 ```bash
