@@ -2,7 +2,7 @@
 A jQuery plugin to create dynamic elements to be placed over image map area tag by using the coordinates in
 corresponding area tag. This plugin can be useful when server responds with some coordinates on image and need to
 create some custom element which will placed on top of image with respect to these coordinates. Here coordinates data
-are given from server side to `area` tag "coords" attributes.
+are given from server side to `area` tag "coords" attribute.
 
 ## Installation
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 HTML
 
-```
+```html
 <img id="first-image" src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
 
 <map id="first-map" name="planetmap">
