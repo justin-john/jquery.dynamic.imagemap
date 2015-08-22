@@ -45,20 +45,22 @@ HTML
 
  Optional object parameter
 
-- areas : The area tags selector that used for image map.
+- **areas** : The area tags selector that used for image map.
 
 The area tag can have some data attributes in HTML which is used to pass data to custom created dynamic elements.
 The following are data attributes
 
-- data-class : The class names that passed to custom created element.
-- data-style : The styles that passed to custom created element.
-- data-content : The inner html that passed to custom created element.
+- **data-class** : The class names that passed to custom created element.
+- **data-style** : The styles that passed to custom created element.
+- **data-content** : The inner html that passed to custom created element.
 
 A wrapper div container is placed automatically created on image on method call. We can pass class and style to
 container using data attributes in image tag.
 
-- data-class : The class names that passed to wrapper of image element.
-- data-style : The styles that passed to wrapper of image element.
+- **data-class** : The class names that passed to wrapper of image element.
+- **data-style** : The styles that passed to wrapper of image element.
+
+An example is placed in example folder. Please take `map.html` in web browser to see what happens with plugin usage.
 
 ### Notes
 

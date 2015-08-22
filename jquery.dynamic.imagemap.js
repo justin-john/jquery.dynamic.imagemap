@@ -31,11 +31,14 @@
 
 		/* Wrap image with div tag for creating dynamically created anchor elements positioned in it. */
 		image.wrap($("<div>", {class: $(image).data('class') || '', style: $(image).data('style') || ''}));
-		
+
 		parent = image.parent();
-		
-		parent.css('position', 'relative');
-		
+
+		parent.css({
+            position: 'relative',
+            display: 'inline-block'
+        });
+
 		/* Iterate through all area tags in map tag to create corresponding dynamic element in the image */
 		areas.map(function(i, n) {
 			mapElement = $("<a>", {
