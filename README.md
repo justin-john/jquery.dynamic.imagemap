@@ -7,7 +7,7 @@ are given from server side to `area` tag "coords" attribute.
 ## Installation
 
 ```bash
-npm install dynamic.imagemap
+npm install dynamic-imagemap
 ```
 
 ## Getting Started
