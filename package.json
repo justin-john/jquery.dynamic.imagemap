@@ -4,7 +4,9 @@
   "keywords": [
     "jquery-plugin",
     "jquery",
-    "image"
+    "image",
+    "imagemap",
+    "map"
   ],
   "maintainers": "Justin John Mathews <justinjohnmathews@gmail.com>",
   "homepage": "https://github.com/justin-john/jquery.dynamic.imagemap",
