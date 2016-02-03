@@ -105,4 +105,4 @@ The *v.1.0* introduces dynamic passing of coordinates directly to method instead
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Justin John Mathews <justinjohnmathews@gmail.com>
+Copyright (c) 2016 Justin John Mathews <justinjohnmathews@gmail.com>
