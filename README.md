@@ -57,12 +57,23 @@ HTML
  Optional object parameter
 
 - **areas** : The area tags selector that used for image map.
+```javascript
+areas: $('#first-map area')
+```
 - **maps** : An array of objects to create custom map elements. The array object  have following properties.
   * **coords** : The coordinates for create elements.
   * **classes** : The classes for created elements.
   * **style** : The styles for created elements.
   * **content** : The content part(html tags allowed) for created elements.
   * **href** : The anchor href part for created elements.
+```javascript
+maps: [ 
+		   { coords: '6,116,97,184', classes: '', style: 'background: green', content: '<span>Rect</span>', href: '#' },
+		   { coords: '251,143,47', classes: '', style: 'background: yellow;text-align: center', content: '<span>Circle</span>' }
+	   ]
+```
+---
+Pass data attributes options 
 
 The area tag can have some data attributes in HTML which is used to pass data to custom created dynamic elements.
 The following are data attributes
@@ -70,13 +81,18 @@ The following are data attributes
 - **data-class** : The class names that passed to custom created element.
 - **data-style** : The styles that passed to custom created element.
 - **data-content** : The inner html that passed to custom created element.
-
+```html
+<area shape="circle" coords="251,143,47" data-class="venus"  data-style="background: blue" data-content="<b>Venus</b>" alt="Venus" href="venus.htm">
+```
 A wrapper div container is placed automatically created on image on method call. We can pass class and style to
 container using data attributes in image tag.
 
 - **data-class** : The class names that passed to wrapper of image element.
 - **data-style** : The styles that passed to wrapper of image element.
-
+```html
+<img id="four-image" src="planets.gif" width="145" data-class="venus"  data-style="border: 1px solid #000"  height="126">
+```
+---
 An example is placed in example folder. Please take `map.html` in web browser to see what happens with plugin usage.
 
 ### Notes
