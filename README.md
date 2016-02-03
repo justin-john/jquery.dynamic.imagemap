@@ -28,6 +28,13 @@ $(document).ready(function() {
     /* Here image "usemap" attribute is checked to find the area tags */
 	$('#second-image').dynamicImageMap();
 
+	/* Here maps array is used to create dynamic map elements */
+	$('#third-image').dynamicImageMap({
+		maps: [ 
+		   { coords: '6,116,97,184', classes: 'rect', style: 'background: green', content: '<span>Rect</span>', href: '#' },
+		   { coords: '251,143,47', classes: 'circle', style: 'background: yellow;text-align: center', content: '<span>Circle</span>' }
+	   ]
+	});
 });
 ```
 
@@ -50,6 +57,14 @@ HTML
  Optional object parameter
 
 - **areas** : The area tags selector that used for image map.
+- **maps** : An array of objects to create custom map elements. The array object  have following properties.
+
+##### Maps Array Object properties
+- **coords** : The coordinates for create elements.
+- **classes** : The classes for created elements.
+- **style** : The styles for created elements.
+- **content** : The content part(html tags allowed) for created elements.
+- **href** : The anchor href part for created elements.
 
 The area tag can have some data attributes in HTML which is used to pass data to custom created dynamic elements.
 The following are data attributes
@@ -69,6 +84,7 @@ An example is placed in example folder. Please take `map.html` in web browser to
 ### Notes
 
 The *v0.0.1* only supports area tags with shape "circle" and "rect". The "poly" area shape is still not supported.
+The *v.1.0* introduces dynamic passing of coordinates directly to method instead of passing in area tags.
 
 
 ## License

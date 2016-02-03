@@ -13,7 +13,15 @@ $(document).ready(function() {
     });
 
 	$('#second-image').dynamicImageMap();
+	
+	$('#third-image').dynamicImageMap({
+	   maps: [ 
+		   { coords: '6,116,97,184', classes: '', style: 'background: green', content: '<span>Rect</span>', href: '#' },
+		   { coords: '251,143,47', classes: '', style: 'background: yellow;text-align: center', content: '<span>Circle</span>' }
+	   ]
+	});
 
+	$('#four-image').dynamicImageMap();
 });
 
 </script>
@@ -27,11 +35,12 @@ $(document).ready(function() {
 
 <map id="first-map" name="planetmap">
   <area shape="rect" coords="0,0,82,126" data-style="background: red"  alt="Sun" href="sun.htm">
-  <area shape="circle" coords="90,58,3" data-class="mercury container" data-style="background: yellow" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="90,58,3" data-class="mercury" data-style="background: yellow" alt="Mercury" href="mercur.htm">
   <area shape="circle" coords="124,58,8" data-class="venus"  data-style="background: green" alt="Venus" href="venus.htm">
+  <area shape="circle" coords="124,28,8,4,3" data-class="venus"  data-style="background: blue" alt="Venus" href="venus.htm">
 </map>
 
-
+<img id="four-image" src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap1">
 
 <br><br>
 
@@ -43,6 +52,6 @@ $(document).ready(function() {
 </map>
 <img id="second-image" src="testmap.gif" alt="map of GH site" border="0" width="300" height="300" usemap="#map1">
 
-
+<img id="third-image" src="testmap.gif" alt="map of GH site" border="0" width="300" height="300">
 </body>
 </html>
