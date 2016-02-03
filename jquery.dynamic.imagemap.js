@@ -3,7 +3,7 @@
  *
  * A jQuery plugin to create dynamic elements to be placed over area tags coordinates in image map
  *
- * @author      Justin John Mathews <justin.johnmathews@gmail.com>
+ * @author      Justin John Mathews <justinjohnmathews@gmail.com>
  * @copyright   (c) 2016 Justin John Mathews
  * @license     MIT
  */
