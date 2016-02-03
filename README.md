@@ -58,13 +58,11 @@ HTML
 
 - **areas** : The area tags selector that used for image map.
 - **maps** : An array of objects to create custom map elements. The array object  have following properties.
-
-##### Maps Array Object properties
-- **coords** : The coordinates for create elements.
-- **classes** : The classes for created elements.
-- **style** : The styles for created elements.
-- **content** : The content part(html tags allowed) for created elements.
-- **href** : The anchor href part for created elements.
+  * **coords** : The coordinates for create elements.
+  * **classes** : The classes for created elements.
+  * **style** : The styles for created elements.
+  * **content** : The content part(html tags allowed) for created elements.
+  * **href** : The anchor href part for created elements.
 
 The area tag can have some data attributes in HTML which is used to pass data to custom created dynamic elements.
 The following are data attributes
