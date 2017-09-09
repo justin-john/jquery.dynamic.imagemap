@@ -1,0 +1,27 @@
+{
+  "name": "dynamic-imagemap",
+  "version": "0.0.1",
+  "description": "A jQuery plugin to create dynamic image map",
+  "main": "./jquery.dynamic.imagemap",
+  "authors": [
+    "Justin John Mathews <justinjohnmathews@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "image",
+    "imagemap",
+    "map",
+    "dynamic-imagemap"
+  ],
+  "homepage": "https://github.com/justin-john/jquery.dynamic.imagemap",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "example"
+  ]
+}
