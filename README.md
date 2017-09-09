@@ -10,8 +10,13 @@ See Demo [here](http://justin-john.github.io/jquery.dynamic.imagemap/#demo).
 
 ## Installation
 
+###### Using NPM
 ```bash
 npm install dynamic-imagemap
+```
+###### Using Bower
+```bash
+bower install dynamic-imagemap
 ```
 
 ## Getting Started
